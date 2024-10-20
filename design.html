@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Estately</div>
+            <ul>
+                <li><a href="#">Condos</a></li>
+                <li><a href="#">Houses</a></li>
+                <li><a href="#">Commercial</a></li>
+                <li><a href="#">For Rent</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           <div class="currency-selector">
+    <select id="currency" name="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="INR">INR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+    </select>
+    <button class="login-btn">Login</button>
+</div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="property-details">
+            <h2>Real estate for living and investments</h2>
+            <div class="property">
+                <img src="image.avif" alt="House Image" class="property-image">
+                <div class="property-info">
+                    <p class="address">201 Prague Dr, San Jose, CA 95119</p>
+                    <div class="details">
+                        <span class="beds">4 <small>beds</small></span>
+                        <span class="baths">3 <small>baths</small></span>
+                        <span class="sqft">1,868 <small>sqft</small></span>
+                    </div>
+                    <p class="price">$1,650,000</p>
+                    <button class="split-options">Split options</button>
+                    <div class="agent-info">
+                        <img src="agent.avif" alt="Agent Photo" class="agent-photo">
+                        <div class="agent-details">
+                            <p>Amelia Stephenson</p>
+                            <p class="agent-title">Agent</p>
+                            <button class="contact-btn">Contact</button>
+                        </div>
+                    </div>
+                    <button class="tour-btn">Request a tour</button>
+                    <p class="tour-note">Earliest at 11:00 tomorrow</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="search-bar">
+            <div class="search-options">
+                <div class="option">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="San Jose, CA">
+                </div>
+                <div class="option">
+                    <label for="property-type">Property type</label>
+                    <select id="property-type">
+                        <option value="Apartments">Apartments</option>
+                        <option value="Houses">Houses</option>
+                        <option value="Commercial">Commercial</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label for="price-range">Price</label>
+                    <input type="text" id="price-range" placeholder="$2,000 - $13,000">
+                </div>
+                <div class="option">
+                    <label for="bedrooms">Bedrooms</label>
+                    <input type="number" id="bedrooms" placeholder="3-5">
+                </div>
+                <button class="search-btn">Search</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
